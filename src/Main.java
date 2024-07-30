@@ -82,12 +82,19 @@ public class Main {
         short degrees = -159;
         short friends = 27897;
         byte socets = 67;
+        System.out.println("Значение переменной sandwiches с типом float равна " + sandwiches);
+        System.out.println("Значение переменной meters с типом double равна " + meters);
+        System.out.println("Значение переменной stars с типом long равна " + stars);
+        System.out.println("Значение переменной pigs с типом short равна " + pigs);
+        System.out.println("Значение переменной degrees с типом short равна " + degrees);
+        System.out.println("Значение переменной friends с типом short равна " + friends);
+        System.out.println("Значение переменной socets с типом byte равна " + socets);
 
         byte teacheLudmilaPavlovna = 23;
         byte teacherAnnaSergeevna = 27;
         byte teacherEkaterinaAndreevna = 30;
         short totalPaper = 480;
-        double paperOneStudent = (totalPaper / (teacheLudmilaPavlovna + teacherAnnaSergeevna + teacherEkaterinaAndreevna));
+        double paperOneStudent = (double) totalPaper / (teacheLudmilaPavlovna + teacherAnnaSergeevna + teacherEkaterinaAndreevna);
         System.out.println("на каждого ученика расчитано " + paperOneStudent + " листов бумаги");
 
         byte productivityIn2Minutes = 16;
@@ -129,8 +136,8 @@ public class Main {
         short diet2 = 500;
         byte numberDiet1 = (byte) (sevenKg / diet1);
         byte numberDiet2 = (byte) (sevenKg / diet2);
-        System.out.println(+ numberDiet1 + " дней потребуется чтобы похудеть на " + needReset + " кг ");
-        System.out.println(+ numberDiet2 + " дней потребуется чтобы похудеть на " + needReset + " кг ");
+        System.out.println( numberDiet1 + " дней потребуется чтобы похудеть на " + needReset + " кг ");
+        System.out.println( numberDiet2 + " дней потребуется чтобы похудеть на " + needReset + " кг ");
         byte average = (byte) ((numberDiet1 + numberDiet2) / 2);
         System.out.println("В среднем может потребоваться " + average + " день, чтобы добиться результата в " + needReset + " кг");
         
