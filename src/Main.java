@@ -195,14 +195,14 @@ public class Main {
         }
         //задача 4
         System.out.println("\nЗадача4");
-        int agePeople = 10;
-        if (agePeople >= 2 && agePeople <= 6)
+        int agePeople = 30;
+        if (agePeople >= 2 && agePeople <= 6) {
             System.out.println("если человеку  " + agePeople + " , то ему нужно ходить в детский сад ");
-        if (agePeople >= 7 && agePeople <= 17)
+        }else if (agePeople >= 7 && agePeople <= 17) {
             System.out.println("если человеку  " + agePeople + " , то ему нужно ходить в школу");
-        if (agePeople >= 18 && agePeople <= 24)
+        }else if (agePeople >= 18 && agePeople <= 24) {
             System.out.println("если человеку  " + agePeople + " , то его место в университете");
-        if (agePeople > 24) {
+        }else{
             System.out.println("если человеку  " + agePeople + " , то ему пора на работу");
         }
         //задача 5
