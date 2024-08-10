@@ -300,7 +300,7 @@ public class Main {
                 System.out.println("осенний месяц");
                 break;
             default:
-                System.out.println("такого не существует");
+                System.out.println("не существует такого ");
         }
     }
 }
