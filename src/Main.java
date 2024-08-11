@@ -198,11 +198,11 @@ public class Main {
         int agePeople = 35;
         if (agePeople >= 2 && agePeople <= 6) {
             System.out.println("если человеку  " + agePeople + " , то ему нужно ходить в детский сад ");
-        }else if (agePeople >= 7 && agePeople <= 17) {
+        } else if (agePeople >= 7 && agePeople <= 17) {
             System.out.println("если человеку  " + agePeople + " , то ему нужно ходить в школу");
-        }else if (agePeople >= 18 && agePeople <= 24) {
+        } else if (agePeople >= 18 && agePeople <= 24) {
             System.out.println("если человеку  " + agePeople + " , то его место в университете");
-        }else if(agePeople > 24){
+        } else if (agePeople > 24) {
             System.out.println("если человеку  " + agePeople + " , то ему пора на работу");
         }
         //задача 5
@@ -210,9 +210,9 @@ public class Main {
         int ageChild = 20;
         if (ageChild < 5) {
             System.out.println("если возраст ребёнка равен  " + ageChild + " , то ему нельзя кататься на аттракционах ");
-        }else if (ageChild >= 5 && ageChild <= 14) {
+        } else if (ageChild >= 5 && ageChild <= 14) {
             System.out.println("если возраст ребёнка равен   " + ageChild + " , то ему можно кататься на аттракционах в сопровождении родителей ");
-        }else{
+        } else {
             System.out.println("если возраст ребёнка равен   " + ageChild + " , то ему можно кататься на аттракционах без сопровождения взрослых ");
         }
         //задача 6
@@ -220,9 +220,9 @@ public class Main {
         int places = 150;
         if (places <= 60) {
             System.out.println("в вагоне есть мест: сидячих - " + (60 - places) + "; стоячих - " + (102 - 60));
-        }else if (places >= 60 && places <= 102) {
+        } else if (places >= 60 && places <= 102) {
             System.out.println("в вагоне нет сидячих мест и осталось стоячих - " + (102 - places));
-        }else{
+        } else {
             System.out.println("вагон переполнен на - " + (places - 102) + " мест ");
         }
         //задача 7
@@ -236,6 +236,71 @@ public class Main {
             System.out.println("большее - " + two);
         } else {
             System.out.println("большее - " + three);
+        }
+        //Условный оператор.Урок 2
+        System.out.println("Задача1");
+        int clientOS = 1;
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для IOS по ссылке");
+        } else if (clientOS == 1) {
+            System.out.println("Установите версию приложения для ANDROID по ссылке");
+        }
+        System.out.println("Задача2");
+        int clientDeviceYear = 2018;
+        if (clientDeviceYear <= 2015 && clientOS == 0) {
+            System.out.println("Установите облегчённую версию приложения для IOS по ссылке");
+        } else if (clientDeviceYear > 2015 && clientOS == 0) {
+            System.out.println("Установите версию приложения для IOS по ссылке");
+        }
+        if (clientDeviceYear <= 2015 && clientOS == 1) {
+            System.out.println("Установите облегчённую версию приложения для ANDROID по ссылке");
+        } else if (clientDeviceYear > 2015 && clientOS == 1) {
+            System.out.println("Установите версию приложения для ANDROID по ссылке");
+        }
+        System.out.println("Задача3");
+        int year = 2021;
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является высокосным");
+        } else {
+            System.out.println(year + " год не является высокосным");
+        }
+        System.out.println("Задача4");
+        int deliveryDistance = 120;
+        int day = 1;
+        if (deliveryDistance <= 20) {
+            System.out.println("потребуется дней: " + day);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("потребуется дней: " + (day + 1));
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("потребуется дней: " + (day + 2));
+        } else {
+            System.out.println("доставки нет");
+        }
+        System.out.println("Задача5");
+        int monthNumber = 15;
+        switch (monthNumber) {
+            case 1:
+            case 2:
+            case 12:
+                System.out.println("зимний месяц");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("весенний месяц");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("летний месяц");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("осенний месяц");
+                break;
+            default:
+                System.out.println("не существует такого ");
         }
     }
 }
