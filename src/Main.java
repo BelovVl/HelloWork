@@ -239,7 +239,7 @@ public class Main {
         }
         //Условный оператор.Урок 2
         System.out.println("Задача1");
-        int clientOS = 0;
+        int clientOS = 1;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для IOS по ссылке");
         } else if (clientOS == 1) {
@@ -247,38 +247,38 @@ public class Main {
         }
         System.out.println("Задача2");
         int clientDeviceYear = 2018;
-        int clientOS1 = 1;
-        if (clientDeviceYear <= 2015 && clientOS1 == 0 ) {
+        if (clientDeviceYear <= 2015 && clientOS == 0) {
             System.out.println("Установите облегчённую версию приложения для IOS по ссылке");
-        }else if (clientDeviceYear > 2015 && clientOS1 == 0 ) {
+        } else if (clientDeviceYear > 2015 && clientOS == 0) {
             System.out.println("Установите версию приложения для IOS по ссылке");
-        }if (clientDeviceYear <= 2015 && clientOS1 == 1 ) {
+        }
+        if (clientDeviceYear <= 2015 && clientOS == 1) {
             System.out.println("Установите облегчённую версию приложения для ANDROID по ссылке");
-        }else if (clientDeviceYear > 2015 && clientOS1 == 1 ) {
+        } else if (clientDeviceYear > 2015 && clientOS == 1) {
             System.out.println("Установите версию приложения для ANDROID по ссылке");
         }
         System.out.println("Задача3");
         int year = 2021;
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
-            System.out.println(year+ " год является высокосным");
-        }else{
-            System.out.println(year+ " год не является высокосным");
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является высокосным");
+        } else {
+            System.out.println(year + " год не является высокосным");
         }
         System.out.println("Задача4");
         int deliveryDistance = 120;
         int day = 1;
-        if (deliveryDistance <= 20){
-            System.out.println("потребуется дней:- " + day);
-        }else if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println("потребуется дней:- " + (day +1));
-        }else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-            System.out.println("потребуется дней:- " + (day +2));
-        }else{
+        if (deliveryDistance <= 20) {
+            System.out.println("потребуется дней: " + day);
+        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
+            System.out.println("потребуется дней: " + (day + 1));
+        } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
+            System.out.println("потребуется дней: " + (day + 2));
+        } else {
             System.out.println("доставки нет");
         }
         System.out.println("Задача5");
-        int monthNamber = 15;
-        switch (monthNamber){
+        int monthNumber = 15;
+        switch (monthNumber) {
             case 1:
             case 2:
             case 12:
